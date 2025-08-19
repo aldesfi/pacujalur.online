@@ -208,14 +208,20 @@
       const namaElement = document.getElementById(`namaKiri-${no}`);
       const asalElement = document.getElementById(`asalKiri-${no}`);
       const noElement = document.getElementById(`noKiri-${no}`);
+      const namaElementKanan = document.getElementById(`namaKanan-${no}`);
+      const asalElementKanan = document.getElementById(`asalKanan-${no}`);
+      const noElementKanan = document.getElementById(`noKanan-${no}`);
       if (namaElement) {
         namaElement.classList.toggle('ditandai');
+        namaElementKanan.classList.remove('ditandai');
       }
       if (asalElement) {
         asalElement.classList.toggle('ditandai');
+        asalElementKanan.classList.remove('ditandai');
       }
       if (noElement) {
         noElement.classList.toggle('ditandai');
+        noElementKanan.classList.remove('ditandai');
       }
     } else {
       const checkboxElement = document.getElementById(`checkbox-${no}#L`);
@@ -225,14 +231,20 @@
       const namaElement = document.getElementById(`namaKanan-${no}`);
       const asalElement = document.getElementById(`asalKanan-${no}`);
       const noElement = document.getElementById(`noKanan-${no}`);
+      const namaElementKiri = document.getElementById(`namaKiri-${no}`);
+      const asalElementKiri = document.getElementById(`asalKiri-${no}`);
+      const noElementKiri = document.getElementById(`noKiri-${no}`);
       if (namaElement) {
         namaElement.classList.toggle('ditandai');
+        namaElementKiri.classList.remove('ditandai');
       }
       if (asalElement) {
         asalElement.classList.toggle('ditandai');
+        asalElementKiri.classList.remove('ditandai');
       }
       if (noElement) {
         noElement.classList.toggle('ditandai');
+        noElementKiri.classList.remove('ditandai');
       }
     }
     localStorage.setItem(no, side);
