@@ -71,7 +71,7 @@
   }
    h2 {
       font-size: 2rem;
-      font-weight: 700;
+      font-weight: 600;
       margin: 10px 0;
       background: linear-gradient(90deg, #ff9800, #e91e63, #3f51b5);
       -webkit-background-clip: text;
@@ -329,9 +329,8 @@
   <table id="jalurTable" >
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <thead>
-      <tr> 
-        
-        <td colspan="5">*Data tidak dikirim ke server dan hanya tersimpan di perangkat Anda masing-masing.</td>
+      <tr>
+        <td colspan="5">*Data yang anda masukkan tidak dikirim ke server dan hanya tersimpan di perangkat Anda masing-masing.</td>
         <td><?php require __DIR__ . '/counter.php'; ?>
  <i class="fa fa-eye" aria-hidden="true"></i> <?= htmlspecialchars($COUNTER_TOTAL_VIEWS) ?>
 </td>

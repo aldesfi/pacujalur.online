@@ -72,7 +72,7 @@
   }
    h2 {
       font-size: 2rem;
-      font-weight: 700;
+      font-weight: 600;
       margin: 10px 0;
       background: linear-gradient(90deg, #ff9800, #e91e63, #3f51b5);
       -webkit-background-clip: text;
@@ -232,8 +232,8 @@
   <!-- Tabel Data -->
   <table id="jalurTable" >
     <thead>
-         <tr> <td colspan="6">*Data tidak dikirim ke server dan hanya tersimpan di perangkat Anda masing-masing.</td></tr>
-     
+         <tr>
+      <td colspan="5">*Data yang anda masukkan tidak dikirim ke server dan hanya tersimpan di perangkat Anda masing-masing.</td>
       <tr>
         <th>No</th>
         <th>Nama Jalur</th>
