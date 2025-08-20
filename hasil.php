@@ -156,85 +156,8 @@
 
 <button onclick="generatePDF()" class="btn-download">Unduh PDF</button>
 <button id="beranda.php" onclick="window.location.href='index.php'" class="btn-download">Aduan</button>
-<button id="beranda.php" onclick="window.location.href='https://www.google.com/search?q=hasil+resmi+pacu+jalur+2025'" class="btn-download">Hasil Resmi</button>
-<script>
-  function resetCheck() {
-    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
-    const namaElements = document.querySelectorAll('[id^="namaKiri-"], [id^="namaKanan-"]');
-    const asalElements = document.querySelectorAll('[id^="asalKiri-"], [id^="asalKanan-"]');
-    const noElements = document.querySelectorAll('[id^="noKiri-"], [id^="noKanan-"]');
-    localStorage.clear(); // Hapus semua data di localStorage
-    checkboxes.forEach(checkbox => {
-      checkbox.checked = false;
-      checkbox.classList.remove('ditandai');
-    });
-    namaElements.forEach(element => {
-      element.classList.remove('ditandai');
-    });
-    asalElements.forEach(element => {
-      element.classList.remove('ditandai');
-    });
-    noElements.forEach(element => {
-      element.classList.remove('ditandai');
-    });
-  }
+<button id="beranda.php" onclick="window.location.href='https://www.google.com/search?q=hasil+resmi+pacu+jalur+2025'" class="btn-download">Resmi</button>
 
-  
-  function munculkanCheck() {
-    const aktifLidiButton = document.getElementById('aktif_lidi');
-    aktifLidiButton.classList.toggle('active');
-    aktifLidiButton.textContent = aktifLidiButton.classList.contains('active') ? 'Simpan Lidi' : 'Pakai Lidi';
-    const resetLidiButton = document.getElementById('reset_lidi');
-    resetLidiButton.style.display = aktifLidiButton.classList.contains('active') ? 'inline' : 'none';
-    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
-    checkboxes.forEach(checkbox => {
-      checkbox.style.display = checkbox.style.display === 'none' ? 'inline' : 'none';
-    });
-
-  }
-  function toggleCheckbox(checkbox) {
-    const value = checkbox.value;
-    console.log("Checkbox toggled:", value);
-    const [no, side] = value.split("#");
-    console.log("No:", no, "Side:", side);
-    if(side=="L") {
-      const checkboxElement = document.getElementById(`checkbox-${no}#R`);
-      if (checkboxElement.checked) {
-        checkboxElement.checked = !checkboxElement.checked;
-      }
-      const namaElement = document.getElementById(`namaKiri-${no}`);
-      const asalElement = document.getElementById(`asalKiri-${no}`);
-      const noElement = document.getElementById(`noKiri-${no}`);
-      if (namaElement) {
-        namaElement.classList.toggle('ditandai');
-      }
-      if (asalElement) {
-        asalElement.classList.toggle('ditandai');
-      }
-      if (noElement) {
-        noElement.classList.toggle('ditandai');
-      }
-    } else {
-      const checkboxElement = document.getElementById(`checkbox-${no}#L`);
-      if (checkboxElement.checked) {
-        checkboxElement.checked = !checkboxElement.checked;
-      }
-      const namaElement = document.getElementById(`namaKanan-${no}`);
-      const asalElement = document.getElementById(`asalKanan-${no}`);
-      const noElement = document.getElementById(`noKanan-${no}`);
-      if (namaElement) {
-        namaElement.classList.toggle('ditandai');
-      }
-      if (asalElement) {
-        asalElement.classList.toggle('ditandai');
-      }
-      if (noElement) {
-        noElement.classList.toggle('ditandai');
-      }
-    }
-    localStorage.setItem(no, side);
-  }
-</script>
 </div>
 <style>
   div {
@@ -324,7 +247,7 @@
     let jalurData = [];
 
     // Baca CSV langsung dari file di direktori yang sama
-    fetch("jalur.csv")
+    fetch("jalur_hari_1.csv")
       .then(response => response.text())
       .then(text => {
         parseCSV(text);
@@ -353,10 +276,26 @@
         tr.innerHTML = `
           <td id="noKiri-${row.No}"> ${row.No} </td>
           <td id="nama">
-          ${localStorage.getItem(`${row.No}`) ? (localStorage.getItem(`${row.No}`)=='L' ? row.NamaKiri : row.NamaKanan) : "~"}
+            ${
+              row.Pemenang 
+                ? (row.Pemenang == 'L' ? row.NamaKiri : row.NamaKanan)
+                : (
+                    localStorage.getItem(`${row.No}`)
+                      ? (localStorage.getItem(`${row.No}`) == 'L' ? row.NamaKiri : row.NamaKanan)
+                      : "~"
+                  )
+            }
           </td>
           <td id="asal">
-          ${localStorage.getItem(`${row.No}`) ? (localStorage.getItem(`${row.No}`)=='L' ? row.AsalKiri : row.AsalKanan) : "~"}
+            ${
+              row.Pemenang 
+                ? (row.Pemenang == 'L' ? row.AsalKiri : row.AsalKanan)
+                : (
+                    localStorage.getItem(`${row.No}`)
+                      ? (localStorage.getItem(`${row.No}`) == 'L' ? row.AsalKiri : row.AsalKanan)
+                      : "~"
+                  )
+            }
           </td>
         `;
         tbody.appendChild(tr);
