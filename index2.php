@@ -6,8 +6,8 @@
   <title>Undian Pacu Jalur Event Nasional Tepian Narosa | Kuantan Singingi</title>
 
   <!-- Meta SEO -->
-  <meta name="description" content="Ikuti Undian Pacu Jalur Event Nasional Tepian Narosa, Kecamatan Kuantan Tengah, Kabupaten Kuantan Singingi. Acara budaya terbesar di Riau dengan tradisi balap jalur yang mendunia. Saksikan juga live streaming viral Pacu Jalur langsung dari Tepian Narosa. Link Nonton Live Streaming Festival Pacu Jalur 2025 Hari Ini">
-  <meta name="keywords" content="Pacu Jalur, Event Nasional, Tepian Narosa, Kuantan Tengah, Kuantan Singingi, Budaya Riau, Undian Pacu Jalur, Live Streaming Pacu Jalur, Pacu Jalur Viral, Link Nonton Live Streaming Festival Pacu Jalur 2025 Hari Ini">
+  <meta name="description" content="Ikuti Undian Pacu Jalur Event Nasional Tepian Narosa, Kecamatan Kuantan Tengah, Kabupaten Kuantan Singingi. Acara budaya terbesar di Riau dengan tradisi balap jalur yang mendunia.">
+  <meta name="keywords" content="Pacu Jalur, Event Nasional, Tepian Narosa, Kuantan Tengah, Kuantan Singingi, Budaya Riau, Undian Pacu Jalur">
   <meta name="author" content="Pacu Jalur Tepian Narosa">
 
   <!-- Open Graph (Facebook & WhatsApp) -->
@@ -126,13 +126,12 @@
     
 <h2>
   <img src="logo_big.png" alt="Logo" style="width: 20%; display: block; margin: 0 auto;">
-  UNDIAN PACU JALUR EVENT NASIONAL TAHUN 2025 <br>
+ PACU JALUR EVENT NASIONAL TAHUN 2025 <br>
   TEPIAN NAROSA, KAB. KUANTAN SINGINGI
 </h2>
 
   <!-- Filter -->
   <div>
-  
   <input type="text" id="searchNama" onkeyup="filterTable()" placeholder="Cari Nama Jalur...">
   <select id="filterAsal" onchange="filterTable()">
   <option value="">-- Semua (Asal) --</option>
@@ -156,10 +155,8 @@
   </select>
 
 <button onclick="generatePDF()" class="btn-download">Unduh PDF</button>
-<button id="aktif_lidi" onclick="munculkanCheck()" class="btn-download">Pakai Lidi</button>
-<button id="reset_lidi" onclick="resetCheck()" class="btn-download" style="display: none;">Reset Lidi</button>
-<button id="hasil.php" onclick="window.location.href='hasil.php'" class="btn-download">Hasil</button>
-
+<button id="beranda.php" onclick="window.location.href='index.php'" class="btn-download">Aduan</button>
+<button id="beranda.php" onclick="window.location.href='https://www.google.com/search?q=hasil+resmi+pacu+jalur+2025'" class="btn-download">Resmi</button>
 <script>
   function resetCheck() {
     const checkboxes = document.querySelectorAll('input[type="checkbox"]');
@@ -208,20 +205,14 @@
       const namaElement = document.getElementById(`namaKiri-${no}`);
       const asalElement = document.getElementById(`asalKiri-${no}`);
       const noElement = document.getElementById(`noKiri-${no}`);
-      const namaElementKanan = document.getElementById(`namaKanan-${no}`);
-      const asalElementKanan = document.getElementById(`asalKanan-${no}`);
-      const noElementKanan = document.getElementById(`noKanan-${no}`);
       if (namaElement) {
         namaElement.classList.toggle('ditandai');
-        namaElementKanan.classList.remove('ditandai');
       }
       if (asalElement) {
         asalElement.classList.toggle('ditandai');
-        asalElementKanan.classList.remove('ditandai');
       }
       if (noElement) {
         noElement.classList.toggle('ditandai');
-        noElementKanan.classList.remove('ditandai');
       }
     } else {
       const checkboxElement = document.getElementById(`checkbox-${no}#L`);
@@ -231,20 +222,14 @@
       const namaElement = document.getElementById(`namaKanan-${no}`);
       const asalElement = document.getElementById(`asalKanan-${no}`);
       const noElement = document.getElementById(`noKanan-${no}`);
-      const namaElementKiri = document.getElementById(`namaKiri-${no}`);
-      const asalElementKiri = document.getElementById(`asalKiri-${no}`);
-      const noElementKiri = document.getElementById(`noKiri-${no}`);
       if (namaElement) {
         namaElement.classList.toggle('ditandai');
-        namaElementKiri.classList.remove('ditandai');
       }
       if (asalElement) {
         asalElement.classList.toggle('ditandai');
-        asalElementKiri.classList.remove('ditandai');
       }
       if (noElement) {
         noElement.classList.toggle('ditandai');
-        noElementKiri.classList.remove('ditandai');
       }
     }
     localStorage.setItem(no, side);
@@ -323,22 +308,13 @@
 
   <!-- Tabel Data -->
   <table id="jalurTable" >
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <thead>
-      <tr> 
-        
-        <td colspan="5">*Data tidak dikirim ke server dan hanya tersimpan di perangkat Anda masing-masing.</td>
-        <td><?php require __DIR__ . '/counter.php'; ?>
- <i class="fa fa-eye" aria-hidden="true"></i> <?= htmlspecialchars($COUNTER_TOTAL_VIEWS) ?>
-</td>
-      </tr>
+         <tr> <td colspan="6">*Data tidak dikirim ke server dan hanya tersimpan di perangkat Anda masing-masing.</td></tr>
+     
       <tr>
         <th>No</th>
-        <th>Nama Jalur (Kiri)</th>
-        <th>Asal (Kiri)</th>
-        <th>No</th>
-        <th>Nama Jalur (Kanan)</th>
-        <th>Asal (Kanan)</th>
+        <th>Nama Jalur</th>
+        <th>Asal</th>
       </tr>
     </thead>
     <tbody></tbody>
@@ -375,12 +351,13 @@
       jalurData.forEach(row => {
         let tr = document.createElement("tr");
         tr.innerHTML = `
-          <td id="noKiri-${row.No}" class="${localStorage.getItem(`${row.No}`)=='L' ? 'ditandai' : ''}">${row.No} <input type="checkbox" id="checkbox-${row.No}#L" value="${row.No}#L" style="display: none;" onchange="toggleCheckbox(this)" ${localStorage.getItem(`${row.No}`)=='L' ? 'checked' : ''}></td>
-          <td id="namaKiri-${row.No}" class="${localStorage.getItem(`${row.No}`)=='L' ? 'ditandai' : ''}">${row.NamaKiri}</td>
-          <td id="asalKiri-${row.No}" class="${localStorage.getItem(`${row.No}`)=='L' ? 'ditandai' : ''}">${row.AsalKiri}</td>
-          <td id="noKanan-${row.No}" class="${localStorage.getItem(`${row.No}`)=='R' ? 'ditandai' : ''}">${row.No} <input type="checkbox" id="checkbox-${row.No}#R" value="${row.No}#R" style="display: none;" onchange="toggleCheckbox(this)" ${localStorage.getItem(`${row.No}`)=='R' ? 'checked' : ''}></td>
-          <td id="namaKanan-${row.No}" class="${localStorage.getItem(`${row.No}`)=='R' ? 'ditandai' : ''}">${row.NamaKanan}</td>
-          <td id="asalKanan-${row.No}" class="${localStorage.getItem(`${row.No}`)=='R' ? 'ditandai' : ''}">${row.AsalKanan}</td>
+          <td id="noKiri-${row.No}"> ${row.No} </td>
+          <td id="nama">
+          ${localStorage.getItem(`${row.No}`) ? (localStorage.getItem(`${row.No}`)=='L' ? row.NamaKiri : row.NamaKanan) : "~"}
+          </td>
+          <td id="asal">
+          ${localStorage.getItem(`${row.No}`) ? (localStorage.getItem(`${row.No}`)=='L' ? row.AsalKiri : row.AsalKanan) : "~"}
+          </td>
         `;
         tbody.appendChild(tr);
       });
@@ -397,11 +374,9 @@
         let tds = trs[i].getElementsByTagName("td");
         let namaKiri = tds[1].textContent.toLowerCase();
         let asalKiri = tds[2].textContent.toLowerCase();
-        let namaKanan = tds[4].textContent.toLowerCase();
-        let asalKanan = tds[5].textContent.toLowerCase();
 
         let cocokNama = (namaKiri.includes(inputNama) || namaKanan.includes(inputNama));
-        let cocokAsal = (filterAsal === "" || asalKiri.includes(filterAsal) || asalKanan.includes(filterAsal));
+        let cocokAsal = (filterAsal === "" || asalKiri.includes(filterAsal));
 
         trs[i].style.display = (cocokNama && cocokAsal) ? "" : "none";
       }
@@ -423,7 +398,7 @@
     html2pdf().set(opt).from(element).toPdf().get('pdf').save();
   }
     </script>
-    <p>
+   <p>
   <strong>Disclaimer</strong><br>
   <em>Penggunaan Local Storage</em><br><br>
   Aplikasi ini menggunakan <em>Local Storage</em> pada perangkat Anda untuk menyimpan data sementara, seperti hasil undian atau catatan jalur.<br>
@@ -431,10 +406,9 @@
   Penghapusan riwayat browser, cache, atau penggunaan perangkat lain dapat menyebabkan data hilang.<br><br>
   Dengan menggunakan aplikasi ini, Anda dianggap telah memahami dan menyetujui ketentuan di atas.
 </p>
-</body>
 
+</body>
 <footer>
   <p>&copy; 2025 Aduan Pacu Jalur. Versi 1.0-Beta</p>
-  <p> Contact Center: <a href="https://wa.me/6282172049622">+6282172049622</a></p>
 </footer>
 </html>
