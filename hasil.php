@@ -241,6 +241,7 @@
       </tr>
     </thead>
     <tbody></tbody>
+        <tr><td colspan="6">Last update: 19:00 WIB</td></tr>
   </table>
 
   <script>

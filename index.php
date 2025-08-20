@@ -38,12 +38,11 @@
     }
     h2 { text-align: center; }
     table { 
-      width: 100%; border-collapse: collapse; margin-top: 15px;
-   background-image: url('logo_big.png');
+      width: 100%; border-collapse: collapse; margin-top: 5px;
    background-size: cover;
    background-position: center;
      }
-    th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+    th, td { border: 1px solid #ccc; padding: 4px; text-align: left; }
     th { background: #f2f2f2; }
     input, select { padding: 8px; margin: 5px; }
 
@@ -347,15 +346,16 @@
       </tr>
     </thead>
     <tbody></tbody>
-    <tr><td class="ditandai_admin"></td><td colspan="4">Ditandai Admin<td></tr>
-    <tr><td class="ditandai"></td><td colspan="4">Ditandai Pengguna<td></tr>
+    <tr><td class="ditandai_admin"></td><td colspan="5">Ditandai Admin</td></tr>
+    <tr><td class="ditandai"></td><td colspan="5">Ditandai Pengguna</td></tr>
+    <tr><td colspan="6">Last update: 19:00 WIB</td></tr>
   </table>
 
   <script>
     let jalurData = [];
 
     // Baca CSV langsung dari file di direktori yang sama
-    fetch("jalur.csv")
+    fetch("jalur_hari_1.csv")
       .then(response => response.text())
       .then(text => {
         parseCSV(text);
