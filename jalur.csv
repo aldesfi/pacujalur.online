@@ -1,29 +1,29 @@
-No,NamaKiri,AsalKiri,NamaKanan,AsalKanan
-1,PBB Rantau Kuantan,Pl Pj Hilir/INM,Siluman Buayo Danau 2013,Sitorajo Kari/KT
-2,3 Putri Olak Keramat,Ps Sialang Jaya/INHU,Raja Kuantan,Pl Madinah/KH
-3,Sembaran Olang Pulai,Rawang Binjai/PGN,Upae Saghok Ghimbo Dusun,Kepala Pulau/KH
-4,Bintang Muda Canang Nagori,Seb Sungai/GT,Sopan Sati Datuak Bandaro Kayo,Pucuk Rantau/PCR
-5,Kibasan Nago Liar,Lb Terentang/GT,Siluman Nago Putie,Bdg Sikuran/INM
-6,Siluman Ular Batu Dulang,Sangau/KM,Pendekar Sati Tumpuan Nagori,Kp Baru Stj/SR
-7,Tuju Bunian Sungai Namo,Sumpu/HK,Tuah Putri Kuntum Bunga Andini A,Kepala Pulau/KH
-8,Tuah Koghi Dubalang Ghajo 2014,Pt Gobang Kari/KT,Batu Lompatan Harimau Kompe,Kinali/KM
-9,Nago Sati Sungei Kaghimun,Teratak Baru/KH,Keramat Limpato Tigo Muaro,Kp Baru Koto/INM
-10,Pahlawan Kuantan Cahaya Kuansing,Muaro Sentajo/SR,Panah Ombak Sutan Mudo Indragiri,Sukamaju/INHU
-11,Linta Jalang 2024,Petapahan/GT,Samurai Jopang Bukik Tantunggang,Pl Kedundung/KT
-12,Ghajo Siluman Sungai Tonam,Pl Sipan/INM,Pangeran Fortuna,Pl Rumput/GT
-13,Toduang Biso Rimbo Piako,Pebaun Hilir/KM,Singa Kuantan,Sei Pinang/HK
-14,Putri Onangan Paduko Sari,Koto Cerenti/CRT,Mahkota Alam Gunuong,Pl Busuk Jaya/INM
-15,Bintang Emas Cahaya Intan 2023,Tanjung/HK,Mantia Batuah Guntuang Piako,Jake/KT
-16,Sultan Sakti Bakung Batuah,Pl Baru/.KHS,Nago Sati Paboun,Pebaun Hulu/KM
-17,Onggang Sati Ghimbo Bunian,Koto Kari/KT,Ular Gewang,Koto Inuman/IN
-18,Putri Bungu Sayang tak Sudah,Pelukahan/KHS,Untuang Sakato Tuah Nagoghi,Tj Medan/CRT
-19,Montiko Limbek Putieh,Pl Godang Kari/KT,Kudo Putie Ghajo Kukok,Tanjung/ KHS
-20,Delima Indah Permata Kuantan,Saik/KM,Carano Kuansing,Koto Tuo Kopah/KT
-21,Merak Jingga,Sawah/KT,Tuah Putri Mandi Sikayang Ome,Pl Kijang/KH
-22,Buayo Danou,Bandar Alai/KT,Serumpun Teknik Mekatronika,Pl Binjai/KM
-23,Pangeran STM,Koto Taluk/KT,Kori Pusako Kampuang Layang,Tj Medang/HK
-24,Gawar Melayu Sman 2 Teluk Kuantan,Munsalo Kopah/KT,Selendang Putie Bukit Keramat,Teluk Beringin/GT
-25,Ular Toduang Dubalang Hitam,Kel Benai/BNI,Tuah Putri Bungsu Selingkung Alam,Sei GtTengah/INHU
+No,NamaKiri,AsalKiri,NamaKanan,AsalKanan,Pemenang
+1,PBB Rantau Kuantan,Pl Pj Hilir/INM,Siluman Buayo Danau 2013,Sitorajo Kari/KT, L
+2,3 Putri Olak Keramat,Ps Sialang Jaya/INHU,Raja Kuantan,Pl Madinah/KH, R
+3,Sembaran Olang Pulai,Rawang Binjai/PGN,Upae Saghok Ghimbo Dusun,Kepala Pulau/KH, R
+4,Bintang Muda Canang Nagori,Seb Sungai/GT,Sopan Sati Datuak Bandaro Kayo,Pucuk Rantau/PCR, L
+5,Kibasan Nago Liar,Lb Terentang/GT,Siluman Nago Putie,Bdg Sikuran/INM, L
+6,Siluman Ular Batu Dulang,Sangau/KM,Pendekar Sati Tumpuan Nagori,Kp Baru Stj/SR, L
+7,Tuju Bunian Sungai Namo,Sumpu/HK,Tuah Putri Kuntum Bunga Andini A,Kepala Pulau/KH, R
+8,Tuah Koghi Dubalang Ghajo 2014,Pt Gobang Kari/KT,Batu Lompatan Harimau Kompe,Kinali/KM, R
+9,Nago Sati Sungei Kaghimun,Teratak Baru/KH,Keramat Limpato Tigo Muaro,Kp Baru Koto/INM, R
+10,Pahlawan Kuantan Cahaya Kuansing,Muaro Sentajo/SR,Panah Ombak Sutan Mudo Indragiri,Sukamaju/INHU, R
+11,Linta Jalang 2024,Petapahan/GT,Samurai Jopang Bukik Tantunggang,Pl Kedundung/KT, R
+12,Ghajo Siluman Sungai Tonam,Pl Sipan/INM,Pangeran Fortuna,Pl Rumput/GT, L
+13,Toduang Biso Rimbo Piako,Pebaun Hilir/KM,Singa Kuantan,Sei Pinang/HK, L
+14,Putri Onangan Paduko Sari,Koto Cerenti/CRT,Mahkota Alam Gunuong,Pl Busuk Jaya/INM, R
+15,Bintang Emas Cahaya Intan 2023,Tanjung/HK,Mantia Batuah Guntuang Piako,Jake/KT, L
+16,Sultan Sakti Bakung Batuah,Pl Baru/.KHS,Nago Sati Paboun,Pebaun Hulu/KM, R
+17,Onggang Sati Ghimbo Bunian,Koto Kari/KT,Ular Gewang,Koto Inuman/IN, L
+18,Putri Bungu Sayang tak Sudah,Pelukahan/KHS,Untuang Sakato Tuah Nagoghi,Tj Medan/CRT, R
+19,Montiko Limbek Putieh,Pl Godang Kari/KT,Kudo Putie Ghajo Kukok,Tanjung/ KHS, L
+20,Delima Indah Permata Kuantan,Saik/KM,Carano Kuansing,Koto Tuo Kopah/KT, R
+21,Merak Jingga,Sawah/KT,Tuah Putri Mandi Sikayang Ome,Pl Kijang/KH, L
+22,Buayo Danou,Bandar Alai/KT,Serumpun Teknik Mekatronika,Pl Binjai/KM, L
+23,Pangeran STM,Koto Taluk/KT,Kori Pusako Kampuang Layang,Tj Medang/HK, L
+24,Gawar Melayu Sman 2 Teluk Kuantan,Munsalo Kopah/KT,Selendang Putie Bukit Keramat,Teluk Beringin/GT, R
+25,Ular Toduang Dubalang Hitam,Kel Benai/BNI,Tuah Putri Bungsu Selingkung Alam,Sei GtTengah/INHU, R
 26,Siligi Biso Pulau Kiambang,Sampurago/HK,Putri Anggun Sibiran Tulang,Banjar Padang/KM
 27,Pematang Putui Rajo Bukik Bunian,Lb Ramo/KM,Ratu Bukit Laman Kucing,Kel Peranap/INHU
 28,Putri Bungsu Dubalang Hitam,Redang/INHU,Rajo Tunggal Rimbo Binuang,Seb Taluk/KT

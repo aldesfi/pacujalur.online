@@ -110,6 +110,11 @@
       color: #fff;
       text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     }
+    .ditandai_admin{
+      background-color: #0077ffff;
+      color: #fff;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
     /* Hover efek */
     tr:hover {
       background-color: #d1e7fd;
@@ -342,6 +347,8 @@
       </tr>
     </thead>
     <tbody></tbody>
+    <tr><td class="ditandai_admin"></td><td colspan="4">Ditandai Admin<td></tr>
+    <tr><td class="ditandai"></td><td colspan="4">Ditandai Pengguna<td></tr>
   </table>
 
   <script>
@@ -366,6 +373,7 @@
         headers.forEach((h, i) => obj[h.trim()] = values[i]?.trim() || "");
         return obj;
       });
+      // console.log(jalurData);
     }
 
     // Render tabel
@@ -375,12 +383,34 @@
       jalurData.forEach(row => {
         let tr = document.createElement("tr");
         tr.innerHTML = `
-          <td id="noKiri-${row.No}" class="${localStorage.getItem(`${row.No}`)=='L' ? 'ditandai' : ''}">${row.No} <input type="checkbox" id="checkbox-${row.No}#L" value="${row.No}#L" style="display: none;" onchange="toggleCheckbox(this)" ${localStorage.getItem(`${row.No}`)=='L' ? 'checked' : ''}></td>
-          <td id="namaKiri-${row.No}" class="${localStorage.getItem(`${row.No}`)=='L' ? 'ditandai' : ''}">${row.NamaKiri}</td>
-          <td id="asalKiri-${row.No}" class="${localStorage.getItem(`${row.No}`)=='L' ? 'ditandai' : ''}">${row.AsalKiri}</td>
-          <td id="noKanan-${row.No}" class="${localStorage.getItem(`${row.No}`)=='R' ? 'ditandai' : ''}">${row.No} <input type="checkbox" id="checkbox-${row.No}#R" value="${row.No}#R" style="display: none;" onchange="toggleCheckbox(this)" ${localStorage.getItem(`${row.No}`)=='R' ? 'checked' : ''}></td>
-          <td id="namaKanan-${row.No}" class="${localStorage.getItem(`${row.No}`)=='R' ? 'ditandai' : ''}">${row.NamaKanan}</td>
-          <td id="asalKanan-${row.No}" class="${localStorage.getItem(`${row.No}`)=='R' ? 'ditandai' : ''}">${row.AsalKanan}</td>
+          <td id="noKiri-${row.No}" class="${row.Pemenang=='L' ? 'ditandai_admin' : localStorage.getItem(`${row.No}`)=='L' ? 'ditandai' : ''}">${row.No} 
+          ${!row.Pemenang 
+            ? `<input type="checkbox" 
+                        id="checkbox-${row.No}#L" 
+                        value="${row.No}#L" 
+                        style="display: none;" 
+                        onchange="toggleCheckbox(this)" 
+                        ${localStorage.getItem(row.No) === 'L' ? 'checked' : ''}>`
+            : ''
+          }
+          </td>
+          <td id="namaKiri-${row.No}" class="${row.Pemenang=='L' ? 'ditandai_admin' : localStorage.getItem(`${row.No}`)=='L' ? 'ditandai' : ''}">${row.NamaKiri}</td>
+          <td id="asalKiri-${row.No}" class="${row.Pemenang=='L' ? 'ditandai_admin' : localStorage.getItem(`${row.No}`)=='L' ? 'ditandai' : ''}">${row.AsalKiri}</td>
+          
+          <td id="noKanan-${row.No}" class="${row.Pemenang=='R' ? 'ditandai_admin' : localStorage.getItem(`${row.No}`)=='R' ? 'ditandai' : ''}">${row.No} 
+          ${!row.Pemenang 
+              ? `<input type="checkbox" 
+                          id="checkbox-${row.No}#R" 
+                          value="${row.No}#R" 
+                          style="display: none;" 
+                          onchange="toggleCheckbox(this)" 
+                          ${localStorage.getItem(row.No) === 'R' ? 'checked' : ''}>`
+              : ''
+            }
+            </td>
+          
+          <td id="namaKanan-${row.No}" class="${row.Pemenang=='R' ? 'ditandai_admin' : localStorage.getItem(`${row.No}`)=='R' ? 'ditandai' : ''}">${row.NamaKanan}</td>
+          <td id="asalKanan-${row.No}" class="${row.Pemenang=='R' ? 'ditandai_admin' : localStorage.getItem(`${row.No}`)=='R' ? 'ditandai' : ''}">${row.AsalKanan}</td>
         `;
         tbody.appendChild(tr);
       });
