@@ -429,5 +429,6 @@
 
 <footer>
   <p>&copy; 2025 Aduan Pacu Jalur. Versi 1.0-Beta</p>
+  <p> Contact Center: <a href="https://wa.me/6282172049622">+6282172049622</a></p>
 </footer>
 </html>

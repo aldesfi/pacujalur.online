@@ -156,7 +156,7 @@
 
 <button onclick="generatePDF()" class="btn-download">Unduh PDF</button>
 <button id="beranda.php" onclick="window.location.href='index.php'" class="btn-download">Aduan</button>
-
+<button id="beranda.php" onclick="window.location.href='https://www.google.com/search?q=hasil+resmi+pacu+jalur+2025'" class="btn-download">Hasil Resmi</button>
 <script>
   function resetCheck() {
     const checkboxes = document.querySelectorAll('input[type="checkbox"]');
