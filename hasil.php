@@ -234,7 +234,7 @@
     <thead>
          <tr>
       <td colspan="5">*Data yang anda masukkan tidak dikirim ke server dan hanya tersimpan di perangkat Anda masing-masing.</td>
-      <tr>
+      <tr style="position: sticky; top: 0; background: white; z-index: 1;">
         <th>No</th>
         <th>Nama Jalur</th>
         <th>Asal</th>

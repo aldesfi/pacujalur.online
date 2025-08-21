@@ -330,12 +330,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <thead>
       <tr>
-        <td><?php require __DIR__ . '/counter.php'; ?>
+        <td style="text-align: center;"><?php require __DIR__ . '/counter.php'; ?>
         <i class="fa fa-eye" aria-hidden="true"></i> <?= htmlspecialchars($COUNTER_TOTAL_VIEWS) ?>
         </td>
         <td colspan="5">*Data yang anda masukkan tidak dikirim ke server dan hanya tersimpan di perangkat Anda masing-masing.</td>
       </tr>
       <tr>
+        <td colspan="6" style="text-align: center; font-weight: bold; background-color: #000000; color: white;"> Putaran Pertama </td>
+      </tr>
+      <tr style="position: sticky; top: 0; background: white; z-index: 1;">
         <th>No</th>
         <th>Nama Jalur (Kiri)</th>
         <th>Asal (Kiri)</th>
