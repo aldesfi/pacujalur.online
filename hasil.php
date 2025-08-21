@@ -242,13 +242,38 @@
     </thead>
     <tbody></tbody>
         <tr><td colspan="6">Last update: 22:09 WIB</td></tr>
+        <tr>
+      <td colspan="6" >
+      <ul id="asalList" style="list-style: none; padding: 0;">
+  <li>Inuman: <span class="asal" data-code="INM">0</span></li>
+  <li>Indragiri Hulu: <span class="asal" data-code="INHU">0</span></li>
+  <li>Pangean: <span class="asal" data-code="PGN">0</span></li>
+  <li>Kuantan Tengah: <span class="asal" data-code="KT">0</span></li>
+  <li>Kuantan Hilir: <span class="asal" data-code="KH">0</span></li>
+  <li>Gunung Toar: <span class="asal" data-code="GT">0</span></li>
+  <li>Kuantan Mudik: <span class="asal" data-code="KM">0</span></li>
+  <li>Hulu Kuantan: <span class="asal" data-code="HK">0</span></li>
+  <li>Sentajo Raya: <span class="asal" data-code="SR">0</span></li>
+  <li>Cerenti: <span class="asal" data-code="CRT">0</span></li>
+  <li>Kuantan Hilir Seberang: <span class="asal" data-code="KHS">0</span></li>
+  <li>Benai: <span class="asal" data-code="BNI">0</span></li>
+  <li>Pucuk Rantau: <span class="asal" data-code="PCR">0</span></li>
+  <li>Singingi: <span class="asal" data-code="SGG">0</span></li>
+  <li>Sumatra Barat: <span class="asal" data-code="SBR">0</span></li>
+  <li>Logas Tanah Darat: <span class="asal" data-code="LTD">0</span></li>
+  <li>Total: <span class="asal" id="totalAsal">0</span></li>
+</ul>
+
+</tr>
   </table>
 
   <script>
+    
+
     let jalurData = [];
 
     // Baca CSV langsung dari file di direktori yang sama
-    fetch("jalur_hari_2.csv")
+    fetch("jalur_hari_2-1.csv")
       .then(response => response.text())
       .then(text => {
         parseCSV(text);
@@ -323,6 +348,44 @@
     }
   </script>
 
+<script>
+    
+  function hitungAsal() {
+    const table = document.getElementById("jalurTable");
+    const asalCounter = {};
+    let total = 0;
+
+    // Loop baris <tbody> saja supaya tidak kena baris footer
+    const rows = table.querySelectorAll("tbody tr");
+
+    rows.forEach(row => {
+      const cells = row.cells;
+
+      // Pastikan ada minimal 3 kolom (No, Nama, Asal)
+      if (cells.length >= 3) {
+        // Ambil teks, lalu split berdasarkan '/'
+        const asalKiri = cells[2].textContent.trim().split("/").pop().trim();
+        console.log(asalKiri);
+        if (asalKiri) {
+          asalCounter[asalKiri] = (asalCounter[asalKiri] || 0) + 1;
+          total++;
+        }
+      }
+    });
+
+    // Update tampilan pada <span>
+    document.querySelectorAll("#asalList .asal").forEach(el => {
+      const kode = el.getAttribute("data-code");
+      el.textContent = asalCounter[kode] || 0;
+    });
+
+     // Update total
+    document.getElementById("totalAsal").textContent = total;
+  }
+
+  // Jalankan saat halaman sudah siap
+  document.addEventListener("DOMContentLoaded", hitungAsal);
+</script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     <script>
       function generatePDF() {

@@ -119,47 +119,6 @@
   <li>Total: <span class="asal" id="totalAsal">0</span></li>
 </ul>
 
-<script>
-  function hitungAsal() {
-    const table = document.getElementById("jalurTable");
-    const asalCounter = {};
-    let total = 0;
-
-    // Loop baris <tbody> saja supaya tidak kena baris footer
-    const rows = table.querySelectorAll("tbody tr");
-
-    rows.forEach(row => {
-      const cells = row.cells;
-
-      // Pastikan ada minimal 6 kolom (No, NamaKiri, AsalKiri, No, NamaKanan, AsalKanan)
-      if (cells.length >= 6) {
-        // Ambil teks, lalu split berdasarkan '/'
-        const asalKiri = cells[2].textContent.trim().split("/").pop().trim();
-        const asalKanan = cells[5].textContent.trim().split("/").pop().trim();
-        if (asalKiri) {
-          asalCounter[asalKiri] = (asalCounter[asalKiri] || 0) + 1;
-          total++;
-        }
-        if (asalKanan) {
-          asalCounter[asalKanan] = (asalCounter[asalKanan] || 0) + 1;
-          total++;
-        }
-      }
-    });
-
-    // Update tampilan pada <span>
-    document.querySelectorAll("#asalList .asal").forEach(el => {
-      const kode = el.getAttribute("data-code");
-      el.textContent = asalCounter[kode] || 0;
-    });
-
-     // Update total
-    document.getElementById("totalAsal").textContent = total;
-  }
-
-  // Jalankan saat halaman sudah siap
-  document.addEventListener("DOMContentLoaded", hitungAsal);
-</script>
 </tr>
     </tr>
   </table>
