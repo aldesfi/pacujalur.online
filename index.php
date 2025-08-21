@@ -120,7 +120,7 @@
 </tr>
     </tr>
   </table>
-    <script src="scriptku.js"></script>
+    <script src="scriptku.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
   <p>
   <strong>Disclaimer</strong><br>
