@@ -330,10 +330,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <thead>
       <tr>
-        <td colspan="5">*Data yang anda masukkan tidak dikirim ke server dan hanya tersimpan di perangkat Anda masing-masing.</td>
         <td><?php require __DIR__ . '/counter.php'; ?>
- <i class="fa fa-eye" aria-hidden="true"></i> <?= htmlspecialchars($COUNTER_TOTAL_VIEWS) ?>
-</td>
+        <i class="fa fa-eye" aria-hidden="true"></i> <?= htmlspecialchars($COUNTER_TOTAL_VIEWS) ?>
+        </td>
+        <td colspan="5">*Data yang anda masukkan tidak dikirim ke server dan hanya tersimpan di perangkat Anda masing-masing.</td>
       </tr>
       <tr>
         <th>No</th>
@@ -347,14 +347,14 @@
     <tbody></tbody>
     <tr><td class="ditandai_admin"></td><td colspan="5">Ditandai Admin</td></tr>
     <tr><td class="ditandai"></td><td colspan="5">Ditandai Pengguna</td></tr>
-    <tr><td colspan="6">Last update: 19:00 WIB</td></tr>
+    <tr><td colspan="6">Last update: 21:40 WIB</td></tr>
   </table>
 
   <script>
     let jalurData = [];
 
     // Baca CSV langsung dari file di direktori yang sama
-    fetch("jalur_hari_1.csv")
+    fetch("jalur_hari_2.csv")
       .then(response => response.text())
       .then(text => {
         parseCSV(text);

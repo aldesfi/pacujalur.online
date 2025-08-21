@@ -241,14 +241,14 @@
       </tr>
     </thead>
     <tbody></tbody>
-        <tr><td colspan="6">Last update: 19:00 WIB</td></tr>
+        <tr><td colspan="6">Last update: 22:09 WIB</td></tr>
   </table>
 
   <script>
     let jalurData = [];
 
     // Baca CSV langsung dari file di direktori yang sama
-    fetch("jalur_hari_1.csv")
+    fetch("jalur_hari_2.csv")
       .then(response => response.text())
       .then(text => {
         parseCSV(text);
