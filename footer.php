@@ -9,7 +9,7 @@
   <p>
     <a href="https://github.com/aldesfi/pacujalur.online" target="_blank" rel="noopener">
       <img 
-        src="https://img.shields.io/badge/GitHub-aldesfi%2Fpacujalur.online-black?logo=github" 
+        src="https://img.shields.io/badge/GitHub-%2Fpacujalur.online-black?logo=github" 
         alt="GitHub repository badge">
     </a>
   </p>

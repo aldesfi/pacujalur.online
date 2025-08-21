@@ -365,7 +365,7 @@
       if (cells.length >= 3) {
         // Ambil teks, lalu split berdasarkan '/'
         const asalKiri = cells[2].textContent.trim().split("/").pop().trim();
-        console.log(asalKiri);
+        // console.log(asalKiri);
         if (asalKiri) {
           asalCounter[asalKiri] = (asalCounter[asalKiri] || 0) + 1;
           total++;

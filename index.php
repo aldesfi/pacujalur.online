@@ -32,7 +32,6 @@
 </head>
 <body >
 
-    
 <h2>
   <img src="logo_big.png" alt="Logo" style="width: 20%; display: block; margin: 0 auto;">
   UNDIAN PACU JALUR EVENT NASIONAL TAHUN 2025 <br>
@@ -73,13 +72,12 @@
 
   <!-- Tabel Data -->
   <table id="jalurTable" >
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <thead>
       <tr>
-        <td style="text-align: center;"><?php require __DIR__ . '/counter.php'; ?>
-        <i class="fa fa-users" aria-hidden="true"></i> <?= htmlspecialchars($COUNTER_TOTAL_VIEWS) ?>
+        <td style="text-align: center;" colspan="2"><?php require __DIR__ . '/counter.php'; ?>
+        <?= htmlspecialchars($COUNTER_TOTAL_VIEWS) ?> views
         </td>
-        <td colspan="5">*Data yang anda masukkan tidak dikirim ke server dan hanya tersimpan di perangkat Anda masing-masing.</td>
+        <td colspan="4">*Data yang anda masukkan tidak dikirim ke server dan hanya tersimpan di perangkat Anda masing-masing.</td>
       </tr>
       <tr>
         <td colspan="6" style="text-align: center; font-weight: bold; background-color: #000000; color: white;"> Putaran Pertama </td>
