@@ -348,7 +348,5 @@
 </p>
 
 </body>
-<footer>
-  <p>&copy; 2025 Aduan Pacu Jalur. Versi 1.0-Beta</p>
-</footer>
+<?php include __DIR__ . '/footer.php'; ?>
 </html>
