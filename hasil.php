@@ -328,7 +328,7 @@
       function generatePDF() {
       const element = document.getElementById('jalurTable');
       const opt = {
-      filename:     'pacujalur2025.pdf',
+      filename:     `pacujalur-${new Date().toISOString().replace(/[:.]/g, '-')}.pdf`,
       margin:       [5, 5, 5, 5],
       image:        { type: 'jpeg', quality: 0.98 },
       html2canvas:  { scale: 2 },
