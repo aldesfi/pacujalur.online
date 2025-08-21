@@ -139,7 +139,7 @@
   <option value="INHU">Indragiri Hulu</option>
   <option value="PGN">Pangean</option>
   <option value="KT">Kuantan Tengah</option>
-  <option value="KH">Kuantan Hilir</option>
+  <option value="/KH">Kuantan Hilir</option>
   <option value="GT">Gunung Toar</option>
   <option value="KM">Kuantan Mudik</option>
   <option value="HK">Hulu Kuantan</option>
@@ -242,7 +242,7 @@
     </thead>
     <tbody></tbody>
         <tr><td colspan="6">Last update: 22:09 WIB</td></tr>
-        <tr>
+        <!-- <tr>
       <td colspan="6" >
       <ul id="asalList" style="list-style: none; padding: 0;">
    <li>Inuman: <span class="asal" data-code="INM">~</span></li>
@@ -264,7 +264,7 @@
   <li>Total: <span class="asal" id="totalAsal">~</span></li>
 </ul>
 
-</tr>
+</tr> -->
   </table>
 
   <script>
@@ -273,12 +273,12 @@
     let jalurData = [];
 
     // Baca CSV langsung dari file di direktori yang sama
-    fetch("jalur_hari_2-1.csv")
+    fetch("jalur_hari_2-2.csv")
       .then(response => response.text())
       .then(text => {
         parseCSV(text);
         renderTable();
-               hitungAsal();
+              //  hitungAsal();
       })
       .catch(err => console.error("Gagal membaca CSV:", err));
 

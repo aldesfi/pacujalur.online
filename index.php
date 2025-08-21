@@ -48,7 +48,7 @@
     <option value="INHU">Indragiri Hulu</option>
     <option value="PGN">Pangean</option>
     <option value="KT">Kuantan Tengah</option>
-    <option value="KH">Kuantan Hilir</option>
+    <option value="/KH">Kuantan Hilir</option>
     <option value="GT">Gunung Toar</option>
     <option value="KM">Kuantan Mudik</option>
     <option value="HK">Hulu Kuantan</option>
@@ -95,7 +95,7 @@
     <tr><td class="ditandai_admin"></td><td colspan="5">Ditandai Admin</td></tr>
     <tr><td class="ditandai"></td><td colspan="5">Ditandai Pengguna</td></tr>
     <tr><td colspan="6">Last update: 21:40 WIB</td></tr>
-    <tr>
+    <!-- <tr>
       <td colspan="6" >
       <ul id="asalList" style="list-style: none; padding: 0;">
   <li>Inuman: <span class="asal" data-code="INM">~</span></li>
@@ -117,7 +117,7 @@
   <li>Total: <span class="asal" id="totalAsal">~</span></li>
 </ul>
 
-</tr>
+</tr> -->
     </tr>
   </table>
     <script src="scriptku.min.js"></script>

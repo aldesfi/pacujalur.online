@@ -1,7 +1,7 @@
 let jalurData = [];
 
     // Baca CSV langsung dari file di direktori yang sama
-    fetch("jalur_hari_2-1.csv")
+    fetch("jalur_hari_2-2.csv")
       .then(response => response.text())
       .then(text => {
         parseCSV(text);
