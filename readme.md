@@ -22,14 +22,19 @@ Segala masukan akan sangat berarti untuk penyempurnaan aplikasi ini.
 
 ✨ Mari bersama-sama menjaga dan melestarikan budaya Pacu Jalur melalui teknologi.
 
-    <p>
-  <strong>Disclaimer</strong><br>
-  <em>Penggunaan Local Storage</em><br><br>
-  Aplikasi ini menggunakan <em>Local Storage</em> pada perangkat Anda untuk menyimpan data sementara, seperti hasil undian atau catatan jalur.<br>
-  Data tidak dikirim ke server dan hanya tersimpan di perangkat Anda masing-masing.<br>
-  Penghapusan riwayat browser, cache, atau penggunaan perangkat lain dapat menyebabkan data hilang.<br><br>
-  Dengan menggunakan aplikasi ini, Anda dianggap telah memahami dan menyetujui ketentuan di atas.
-</p>
+## Disclaimer Aplikasi
+
+### Penggunaan Local Storage
+
+Aplikasi ini memanfaatkan **Local Storage** pada perangkat Anda untuk menyimpan data sementara, seperti hasil undian atau catatan jalur.  
+Data yang masukkan oleh pengguna **tidak dikirim ke server** dan sepenuhnya hanya tersimpan di perangkat masing-masing pengguna.  
+
+Perlu diperhatikan:  
+- Penghapusan riwayat browser atau cache dapat menyebabkan data hilang  
+- Mengakses aplikasi dari perangkat lain juga tidak akan menampilkan data sebelumnya  
+
+Dengan menggunakan aplikasi ini, Anda dianggap telah membaca, memahami, dan menyetujui ketentuan tersebut.
+
 # Pacu Jalur 2025
 
 Website untuk **Undian Pacu Jalur Event Nasional Tahun 2025** di Tepian Narosa, Kuantan Singingi.  
