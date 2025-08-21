@@ -46,4 +46,4 @@ Dibangun dengan tujuan untuk memudahkan panitia dan masyarakat dalam melihat daf
 - ⬇️ Filter berdasarkan asal
 - 📑 Export ke PDF (dengan watermark *pacu2025*)
 - 🎨 Tampilan tabel dengan warna baris berbeda
-- 🚀 Fitur Lidi Menandai Pemenang 
+- ✅ Fitur Lidi Menandai Pemenang 
