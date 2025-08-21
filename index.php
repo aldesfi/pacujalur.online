@@ -98,23 +98,23 @@
     <tr>
       <td colspan="6" >
       <ul id="asalList" style="list-style: none; padding: 0;">
-  <li>Inuman: <span class="asal" data-code="INM">0</span></li>
-  <li>Indragiri Hulu: <span class="asal" data-code="INHU">0</span></li>
-  <li>Pangean: <span class="asal" data-code="PGN">0</span></li>
-  <li>Kuantan Tengah: <span class="asal" data-code="KT">0</span></li>
-  <li>Kuantan Hilir: <span class="asal" data-code="KH">0</span></li>
-  <li>Gunung Toar: <span class="asal" data-code="GT">0</span></li>
-  <li>Kuantan Mudik: <span class="asal" data-code="KM">0</span></li>
-  <li>Hulu Kuantan: <span class="asal" data-code="HK">0</span></li>
-  <li>Sentajo Raya: <span class="asal" data-code="SR">0</span></li>
-  <li>Cerenti: <span class="asal" data-code="CRT">0</span></li>
-  <li>Kuantan Hilir Seberang: <span class="asal" data-code="KHS">0</span></li>
-  <li>Benai: <span class="asal" data-code="BNI">0</span></li>
+  <li>Inuman: <span class="asal" data-code="INM">~</span></li>
+  <li>Indragiri Hulu: <span class="asal" data-code="INHU">~</span></li>
+  <li>Pangean: <span class="asal" data-code="PGN">~</span></li>
+  <li>Kuantan Tengah: <span class="asal" data-code="KT">~</span></li>
+  <li>Kuantan Hilir: <span class="asal" data-code="KH">~</span></li>
+  <li>Gunung Toar: <span class="asal" data-code="GT">~</span></li>
+  <li>Kuantan Mudik: <span class="asal" data-code="KM">~</span></li>
+  <li>Hulu Kuantan: <span class="asal" data-code="HK">~</span></li>
+  <li>Sentajo Raya: <span class="asal" data-code="SR">~</span></li>
+  <li>Cerenti: <span class="asal" data-code="CRT">~</span></li>
+  <li>Kuantan Hilir Seberang: <span class="asal" data-code="KHS">~</span></li>
+  <li>Benai: <span class="asal" data-code="BNI">~</span></li>
   <li>Pucuk Rantau: <span class="asal" data-code="PCR">0</span></li>
-  <li>Singingi: <span class="asal" data-code="SGG">0</span></li>
-  <li>Sumatra Barat: <span class="asal" data-code="SBR">0</span></li>
-  <li>Logas Tanah Darat: <span class="asal" data-code="LTD">0</span></li>
-  <li>Total: <span class="asal" id="totalAsal">0</span></li>
+  <li>Singingi: <span class="asal" data-code="SGG">~</span></li>
+  <li>Sumatra Barat: <span class="asal" data-code="SBR">~</span></li>
+  <li>Logas Tanah Darat: <span class="asal" data-code="LTD">~</span></li>
+  <li>Total: <span class="asal" id="totalAsal">~</span></li>
 </ul>
 
 </tr>

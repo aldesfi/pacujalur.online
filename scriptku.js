@@ -6,6 +6,7 @@ let jalurData = [];
       .then(text => {
         parseCSV(text);
         renderTable();
+        hitungAsal();
       })
       .catch(err => console.error("Gagal membaca CSV:", err));
 
@@ -221,6 +222,3 @@ let jalurData = [];
      // Update total
     document.getElementById("totalAsal").textContent = total;
   }
-
-  // Jalankan saat halaman sudah siap
-  document.addEventListener("DOMContentLoaded", hitungAsal);
